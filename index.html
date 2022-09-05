@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <script type="text/javascript" src="./vendor/bootstrap.js"></script>
+    <script type="text/javascript" src="1.js"></script> -->
+    <script src="https://use.fontawesome.com/8e2728aa36.js"></script>
+    <link rel="stylesheet" href="./vendor/bootstrap.css">
+
+    <link rel="stylesheet" href="style.css">
+
+<body class="body">
+
+    <div class="contain">
+        <div class="title">
+            <h1>TODO APP with REDUX</h1>
+        </div>
+        <div class="wall">
+        
+                <div class="container">
+                    <label for="search">Search</label>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-11">
+                            <input class="text" type="text" name="" id="BySearch" placeholder="Input search text" >
+                        </div>
+                        <div class="col-sm-1 ">
+                            <button onclick="filterBySearch()">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+
+
+                    </div>
+                    <br>
+                    <label for="">Filter By Status</label>
+                    <br>
+                    <div class="radio-group">
+                        <input class="radio1" type="radio" name="filter" id="all" class="radio" value="all"
+                            onclick="LocBangRadioButton()" >
+                        <label for="">All </label>
+                        <input class="radio1" type="radio" name="filter" id="Completed" class="radio" value="check"
+                            onclick="LocBangRadioButton()">
+                        <label for="">Completed</label>
+                        <input class="radio1" type="radio" name="filter" id="To do" class="radio" value="todo"
+                            onclick="LocBangRadioButton()">
+                        <label for="">To do</label>
+                    </div>
+
+                    <label for="search">Filter By Level</label>
+                    <br>
+                    <select name="Level" id="FilterByLevel" onchange="filterByLevel()">
+                        <h3>select Level</h3>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                        <option value="low">Low</option>
+                    </select>
+
+                    <hr>
+                    <div class="checkbox-group">
+                       
+                       <div class="container">
+                        <div id="result">
+                        </div>
+                   
+
+                       </div>
+
+                    </div>
+                    <br>
+                    <div class="add">
+                        <div class="row">
+                            <div class="col-sm-7 hup">
+                                <input class="taskInput" type="text" name="" id="taskInput" placeholder="Add Todo">
+                            </div>
+                            <div class="col-sm-3 hup1">
+                                <select name="level" id="level">
+                                    <option value="medium">Medium</option>
+                                    <option value="high">High</option>
+                                    <option value="low">Low</option>
+                                </select>
+
+                            </div>
+                            <div class="col-sm-2 hup2">
+                                <button onclick="addTask()" type="button"> ADD</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+        
+    </div>
+
+
+    </div>
+    <script src="demo.js"></script>
+    
+  
+</body>
+
+</html>
